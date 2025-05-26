@@ -1,0 +1,176 @@
+:root {
+    --primary: #008aaa;
+    --secondary: #d1884f;
+    --tertiary: #3bbadb;
+}
+
+:root[data-bs-theme="dark"] {
+    --bs-body-bg: #000000;
+    --bs-body-color: #f1f1f1;
+
+    --bs-card-bg: #111111;
+    --bs-navbar-bg: #000000;
+    --bs-border-color: #333333;
+}
+
+body {
+    height: 100vh;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.btn-primary {
+    background-color: #008aaa !important;
+    border-color: #008aaa !important;
+}
+
+.btn-outline-dark {
+    border-color: #d1884f !important;
+    color: #d1884f !important;
+}
+
+.btn-outline-dark:hover {
+    background-color: #d1884f !important;
+    color: #ffffff !important;
+}
+
+.badge {
+    background-color: var(--secondary) !important;
+}
+
+.nav-link {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: var(--primary) !important;
+}
+
+.nav-link:hover {
+    color: var(--secondary) !important;
+}
+
+.profile-img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/*Timeline CSS, thanks again Levi*/
+.timeline {
+    position: relative;
+    margin-left: 20px;
+    border-left: 2px solid #6c757d;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-marker {
+    width: 12px;
+    height: 12px;
+    background-color: #0d6efd;
+    border-radius: 50%;
+    position: absolute;
+    left: -7px;
+    top: 6px;
+}
+
+.timeline-content {
+    margin-left: 10px;
+}
+
+.timeline-content h5 {
+    margin-bottom: 0.25rem;
+}
+
+.timeline-content ul {
+    padding-left: 1rem;
+    margin-top: 0.25rem;
+}
+
+.icon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px; /* Adjust gap as needed */
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.tech-icon {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.2s;
+}
+
+.tech-icon:hover {
+    transform: scale(1.1);
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-label {
+    font-size: 0.75rem;
+    margin-top: 0.3rem;
+    color: #ccc;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.icon-wrapper:hover .icon-label {
+    opacity: 1;
+}
+
+[data-bs-theme="light"] .icon-wrapper:hover .icon-label {
+    color: #000000;
+}
+
+
+/*Found on Reddit, Bootstrap CSS for ICON color code with night and light mode*/
+/* Default icon styling */
+.bi {
+  transition: color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.bi:hover {
+  transform: scale(1.1);
+}
+
+/* Theme-based colors */
+[data-bs-theme="dark"] #github-icon {
+    color: #f1f1f1;
+}
+
+[data-bs-theme="light"] #github-icon {
+    color: #000000;
+}
+
+[data-bs-theme="dark"] #linkedin-icon {
+    color: #ffffff;
+}
+
+[data-bs-theme="light"] #linkedin-icon {
+    color: #0a66c2;
+}
+
+[data-bs-theme="dark"] #email-icon {
+    color: #ffffff;
+}
+
+[data-bs-theme="light"] #email-icon {
+    color: #d63384;
+}
+

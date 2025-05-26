@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <!--Bootstrap Social Media Icons-->
+    <link
+    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    /> 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content = "Portfolio">
+    <meta name="author"  content = "Justin El-Chibani"> 
+    
+    <title>Justin El-Chibani - Portfolio</title>
+    <!--Logo-->
+    <link rel="icon" type="image/png" href="assets/White-Screen-LOGO.png">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg shadow">
+      <div class="container-fluid px-4">
+        <!-- Brand -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img id="site-logo" src="assets/White-Screen-LOGO.png" alt="Logo" height="30">
+          <span class="fw-bold">Justin El-Chibani</span>
+        </a>
+
+        <!-- Toggler for mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <!-- Center links -->
+          <ul class="navbar-nav mx-auto gap-lg-5 text-center">
+            <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          </ul>
+
+          <!-- Right side buttons -->
+          <div class="d-flex justify-content-center gap-2 mt-3 mt-lg-0">
+            <a class="btn btn-outline-dark px-3 fs-6 fw-bolder"
+              href="https://drive.google.com/file/d/1kosksytk2VNQkTLHHRSIzW5tvdTiQlHi/view"
+              target="_blank">Resume</a>
+            <button id="themeToggle" class="btn btn-outline-dark px-2 fs-6 fw-bolder"
+                    type="button" aria-label="Toggle theme">🌓</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container main">
+      <!-- Header-->
+      <header class="d-flex align-items-center justify-content-center min-vh-100">
+        <div class="container px-5 pb-5">
+          <div class="row gx-5 align-items-center justify-content-center">
+            <div class="col-xxl-6 mb-4 mb-xxl-0">
+              <!-- Header text content-->
+              <div class="text-center text-xxl-start">
+                <h1 class="display-3 fw-bolder mb-2">
+                    <span class="text-gradient d-inline" style="white-space: nowrap;">
+                        Hey, I'm Justin 
+                    </span>
+                </h1>
+                <p class="fs-5 fw-light text-muted mb-4">
+                    <span class="text-gradient d-inline" style="white-space: nowrap;">
+                        SWE @ University of Ottawa 
+                    </span>
+                  </p>
+                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                  <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="projects.html">
+                    Portfolio
+                  </a>
+                  <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
+                    href="https://drive.google.com/file/d/1kosksytk2VNQkTLHHRSIzW5tvdTiQlHi/view"
+                    target="_blank">
+                    Resume
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-6">
+              <!-- Header profile picture-->
+              <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+                <img
+                  class="profile-img"
+                  src="assets/Grad-Photo.JPEG"
+                  alt="Profile Image"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+
+            <div class="text-center mt-5"> </div>
+        
+        </div>
+      </header>
+
+
+      <!-- About Section-->
+      <section id="about" class="bg-body py-5">
+        <div class="container px-5">
+          <div class="row gx-5 justify-content-center">
+            <div class="col-xxl-8">
+              <div class="text-center my-5">
+                <h2 class="display-5 fw-bolder">
+                  <span class="text-gradient d-inline">About Me</span>
+                </h2>
+                <p class="lead fw-light mb-4">
+                  My name is Justin El-Chibani, and I am a second-year Software Engineering student at the University of Ottawa.
+                </p>
+                <p class="text-muted">
+                   I try my best to be an easy-going and friendly engineering student, 
+                   looking to lend a hand to others through software. Once again, welcome to my portfolio, I hope it provides all the information required for me to be your next star intern! Enjoy your time here :) 
+                </p>
+                <div class="d-flex justify-content-center gap-4 mt-4">
+                  <a href="https://linkedin.com/in/justinelchibani" target="_blank" aria-label="LinkedIn">
+                    <i id="linkedin-icon" class="bi bi-linkedin fs-2"></i>
+                  </a>
+                  <a href="https://github.com/JustinEl-Chibani" target="_blank" aria-label="GitHub">
+                    <i id="github-icon" class="bi bi-github fs-2"></i>
+                  </a>
+                  <a href="justin.elchibani@outlook.com" target="_blank" aria-label="Email">
+                    <i id="email-icon" class="bi bi-envelope fs-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- Experience Section -->
+      <section id="experience" class="py-5 mt-5">
+        <div class="container px-5">
+          <div class="row">
+          
+            <!--Left Side: Tools & Languages-->
+            <div class="col-lg-6 mb-5">
+              <h2 class="fw-bold mb-3">🛠️ Tools & Languages</h2>
+              <p class="text-muted mb-4">Technologies I've worked with:</p>
+
+              <h5 class="fw-bold">💻 Languages</h5>
+              <!--Coding languages-->
+              <div class="icon-grid mb-4">
+              
+                <div class="icon-wrapper">
+                  <img src="assets/icons/java.png" alt="Java" class="tech-icon">
+                  <span class="icon-label">Java</span>
+                </div>
+
+                <div class="icon-wrapper">
+                  <img src="assets/icons/python.png" alt="Python" class="tech-icon">
+                  <span class="icon-label">Python</span>
+                </div>
+                
+                <div class="icon-wrapper">
+                  <img src="assets/icons/html5.png" alt="HTML" class="tech-icon">
+                  <span class="icon-label">HTML</span>
+                </div>
+                
+                <div class="icon-wrapper">
+                  <img src="assets/icons/css3.png" alt="CSS" class="tech-icon">
+                  <span class="icon-label">CSS</span>
+                </div>
+                
+                <div class="icon-wrapper">
+                  <img src="assets/icons/js.png" alt="JavaScript" class="tech-icon">
+                  <span class="icon-label">JavaScript</span>
+                </div>
+                
+                <div class="icon-wrapper">
+                  <img src="assets/icons/powershell.png" alt="PowerShell" class="tech-icon">
+                  <span class="icon-label">PowerShell</span>
+                </div>
+                
+                <div class="icon-wrapper">
+                  <img src="assets/icons/c.png" alt="C" class="tech-icon">
+                  <span class="icon-label">C</span>
+                </div>
+              
+              </div>
+              
+              <!--My toold and platforms-->
+              <h5 class="fw-bold">🧰 Tools & Platforms</h5>
+              <div class="icon-grid">
+              
+                <div class="icon-wrapper">
+                  <img src="assets/icons/windows.png" alt="Windows" class="tech-icon">
+                  <span class="icon-label">Windows</span>
+                </div>
+              
+                <div class="icon-wrapper">
+                  <img src="assets/icons/mac.png" alt="macOS" class="tech-icon">
+                  <span class="icon-label">macOS</span>
+                </div>
+              
+                <div class="icon-wrapper">
+                  <img src="assets/icons/linux.png" alt="Linux" class="tech-icon">
+                  <span class="icon-label">Linux</span>
+                </div>
+              
+                <div class="icon-wrapper">
+                  <img src="assets/icons/git.png" alt="Git" class="tech-icon">
+                  <span class="icon-label">Git</span>
+                </div>
+              
+                <div class="icon-wrapper">
+                  <img src="assets/icons/docker.png" alt="Docker" class="tech-icon">
+                  <span class="icon-label">Docker</span>
+                </div>
+              
+                <div class="icon-wrapper">
+                  <img src="assets/icons/firebase.png" alt="Firebase" class="tech-icon">
+                  <span class="icon-label">Firebase</span>
+                </div>
+              
+                <div class="icon-wrapper">
+                  <img src="assets/icons/vscode.png" alt="VS Code" class="tech-icon">
+                  <span class="icon-label">VS Code</span>
+                </div>
+              
+                <div class="icon-wrapper">
+                  <img src="assets/icons/eclipse.png" alt="Eclipse" class="tech-icon">
+                  <span class="icon-label">Eclipse</span>
+                </div>
+              
+                <div class="icon-wrapper">
+                  <img src="assets/icons/sublime.png" alt="Sublime" class="tech-icon">
+                  <span class="icon-label">Sublime</span>
+                </div>
+              
+              </div>
+            </div>
+            
+            <!-- Right Side: Experience Timeline -->
+            <div class="col-lg-6">
+              <h2 class="fw-bold mb-3">📍 Experience</h2>
+              <div class="timeline">
+  
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <h5>Global Affairs Canada - QA Analyst (CO-OP)</h5>
+                    <small class="text-muted">Jan 2025 - Apr 2025</small>
+                    <ul>
+                      <li>Conducted regression & validation testing</li>
+                      <li>Automated tests using PowerShell</li>
+                      <li>Resolved technical issues to enhance reliability</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <h5>Wouessi Digital - Software Developer</h5>
+                    <small class="text-muted">Feb 2025 - Mar 2025</small>
+                    <ul>
+                      <li>Built EMS frontend using React.js</li>
+                      <li>Managed state with Context API</li>
+                      <li>Collaborated in agile sprints</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <h5>Global Affairs Canada - Jr. Business Relationship Manager (CO-OP)</h5>
+                    <small class="text-muted">May 2024 - Dec 2024</small>
+                    <ul>
+                      <li>Aligned IT services with business goals</li>
+                      <li>Streamlined processes, cutting resolution times by 32%</li>
+                      <li>Led cross-team coordination</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <h5>Transport Canada - FSWEP Student</h5>
+                    <small class="text-muted">Jun 2023 - Aug 2023</small>
+                    <ul>
+                      <li>Analyzed data across multiple systems</li>
+                      <li>Supported process audits and quality control</li>
+                      <li>Improved data accuracy in file management</li>
+                    </ul>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Projects Section -->
+      <section id="projects" class="bg-body py-5">
+        <div class="container px-5">
+          <div class="text-center mb-5">
+            <h2 class="display-5 fw-bolder">
+              <span class="d-inline">Projects</span>
+            </h2>
+            <p class="text-muted">Below are the 4 demos for my future projects. SEG3525</p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Design 1 -->
+            <div class="col-md-6">
+              <a href="design1.html" class="text-decoration-none">
+                <div class="card h-100 shadow">
+                  <img src="assets/design1-coiffeur.png" class="card-img-top" alt="Design 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Design 1 : Service de Coiffeur</h5>
+                    <p class="card-text">Un site de services pour un salon de coiffure local. Interface intuitive et responsive.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Design 2 -->
+            <div class="col-md-6">
+              <a href="design2.html" class="text-decoration-none">
+                <div class="card h-100 shadow">
+                  <img src="assets/design2-jeu-de-balle.png" class="card-img-top" alt="Design 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Design 2 : Jeu de balle</h5>
+                    <p class="card-text">Un mini jeu où une balle rebondit contre des murs et une barre contrôlée par le joueur.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Design 3 -->
+            <div class="col-md-6">
+              <a href="design3.html" class="text-decoration-none">
+                <div class="card h-100 shadow">
+                  <img src="assets/design3-boutique-de-vetements.png" class="card-img-top" alt="Design 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Design 3 : Boutique de vêtements</h5>
+                    <p class="card-text">Un site e-commerce pour une marque de vêtements moderne et élégante.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Design 4 -->
+            <div class="col-md-6">
+              <a href="design4.html" class="text-decoration-none">
+                <div class="card h-100 shadow">
+                  <img src="assets/design4-sports-analytique.png" class="card-img-top" alt="Design 4">
+                  <div class="card-body">
+                    <h5 class="card-title">Design 4 : Analyse sportive</h5>
+                    <p class="card-text">Un tableau de bord interactif pour visualiser des statistiques sportives.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!--Footer-->
+    <footer class="bg-body py-4 mt-auto">
+      <div class="container px-5">
+        <div class="d-flex justify-content-center">
+          <div class="small m-0 text-center">Copyright &copy; Justin El-Chibani 2025</div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+      function showTechName(name) {
+        alert(name);
+      }
+    </script>
+
+    <script>
+      const html = document.documentElement;
+      const logo = document.getElementById("site-logo");
+      const toggleBtn = document.getElementById("themeToggle");
+
+      function updateLogo() {
+        const theme = html.getAttribute("data-bs-theme");
+        logo.src = theme === "dark"
+          ? "assets/Black-Screen-LOGO-Real.png"
+          : "assets/White-Screen-LOGO.png";
+      }
+
+      // Initial load
+      updateLogo();
+
+      // Theme toggle logic
+      toggleBtn.addEventListener("click", () => {
+        const currentTheme = html.getAttribute("data-bs-theme");
+        const newTheme = currentTheme === "dark" ? "light" : "dark";
+        html.setAttribute("data-bs-theme", newTheme);
+        updateLogo();
+      });
+    </script>
+
+  </body>
+</html>
