@@ -57,6 +57,63 @@ a {
     object-fit: cover;
 }
 
+@media (max-width: 576px) {
+  .profile-img {
+    max-width: 125% !important;   /* shrink to fit screen */
+    height: auto !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* -------------------------------------------
+   Scroll Down Arrow (centered + bounce)
+   ------------------------------------------- */
+.scroll-down {
+    position: absolute;
+    bottom: 50px;              /* move arrow UP/DOWN */
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+
+    animation: bounce 1.7s infinite;
+}
+
+.scroll-down i {
+    font-size: 2.5rem;
+    color: var(--primary);
+    transition: color 0.3s ease;
+}
+
+.scroll-down i:hover {
+    color: var(--secondary);
+}
+
+/* Mobile fix: raise the arrow slightly */
+@media (max-width: 576px) {
+  .scroll-down {
+    bottom: 20px !important;
+  }
+}
+
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  40%  { transform: translateY(14px); }
+  60%  { transform: translateY(8px); }
+  80%  { transform: translateY(12px); }
+  100% { transform: translateY(0); }
+}
+
+.scroll-down {
+  animation: bounce 2s cubic-bezier(.25,.46,.45,.94) infinite;
+}
+
+
 
 /*Timeline CSS, thanks again Levi*/
 .timeline {
@@ -136,6 +193,87 @@ a {
 [data-bs-theme="light"] .icon-wrapper:hover .icon-label {
     color: #000000;
 }
+
+
+/* -------------------------------------------
+   UNIVERSAL PROJECT CARD STYLE (main + school)
+   ------------------------------------------- */
+
+/* Card width + centering (desktop) */
+#projects .card,
+#schoolProjects .card {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 14px;
+}
+
+/* PERFECT SQUARE IMAGES (desktop) */
+#projects .card-img-top,
+#schoolProjects .card-img-top {
+    width: 100%;
+    aspect-ratio: 1 / 1;      /* makes it a square */
+    object-fit: cover;        /* fills square cleanly */
+    object-position: center;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    background: transparent;
+    padding: 0;               /* ensures full-size square */
+}
+
+/* Text spacing */
+#projects .card-body,
+#schoolProjects .card-body {
+    padding: 1.1rem;
+    text-align: left;
+}
+
+#projects .card-title,
+#schoolProjects .card-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+#projects .card-text,
+#schoolProjects .card-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* -------------------------------------------
+   RESPONSIVE: MOBILE + TABLET FIXES
+   ------------------------------------------- */
+
+/* Tablets / small laptops */
+@media (max-width: 768px) {
+
+    /* Cards take full width */
+    #projects .card,
+    #schoolProjects .card {
+        max-width: 100%;
+    }
+
+    /* Image remains square but shrinks */
+    #projects .card-img-top,
+    #schoolProjects .card-img-top {
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        height: auto;            /* keeps perfect square via aspect-ratio */
+    }
+}
+
+/* Small phones (iPhone SE / Galaxy Mini) */
+@media (max-width: 480px) {
+
+    #projects .card-img-top,
+    #schoolProjects .card-img-top {
+        aspect-ratio: 1 / 1;
+        width: 100%;
+    }
+}
+
+
+
 
 
 /*Found on Reddit, Bootstrap CSS for ICON color code with night and light mode*/

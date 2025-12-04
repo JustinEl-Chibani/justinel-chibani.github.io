@@ -58,7 +58,7 @@
     
     <div class="container main">
       <!-- Header-->
-      <header class="d-flex align-items-center justify-content-center min-vh-100">
+      <header class="d-flex align-items-center justify-content-center min-vh-100 position-relative">
         <div class="container px-5 pb-5">
           <div class="row gx-5 align-items-center justify-content-center">
             <div class="col-xxl-6 mb-4 mb-xxl-0">
@@ -98,9 +98,9 @@
               </div>
             </div>
           </div>
-
-            <div class="text-center mt-5"> </div>
-        
+        </div>
+        <div class="scroll-down text-center" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">
+          <i class="bi bi-chevron-down"></i>
         </div>
       </header>
 
@@ -254,7 +254,7 @@
                     <small class="text-muted">Jan 2025 - Apr 2025</small>
                     <ul>
                       <li>Conducted regression & validation testing</li>
-                      <li>Automated tests using PowerShell</li>
+                      <li>Automated tests using PowerShell Scripting</li>
                       <li>Resolved technical issues to enhance reliability</li>
                     </ul>
                   </div>
@@ -313,61 +313,131 @@
             <h2 class="display-5 fw-bolder">
               <span class="d-inline">Projects</span>
             </h2>
-            <p class="text-muted">Below are the 4 demos for my future projects. SEG3525</p>
+            <p class="text-muted">
+              Please find all future projects below, as well as some projects I've got the chance to work on, or even create.
+            </p>
           </div>
 
           <div class="row g-4">
-            <!-- Design 1 -->
+
+            <!-- MAIN PROJECT 1: Church Website -->
             <div class="col-md-6">
-              <a href="https://luxemobilecare.github.io" target="_blank" class="text-decoration-none">
+              <a href="https://melkite.com" target="_blank" class="text-decoration-none">
                 <div class="card h-100 shadow">
-                  <img src="assets\Logo-luxe-mobile-care-black.png" class="card-img-top" alt="Design 1">
+                  <img src="assets/SPPLogo.jpg" class="card-img-top" alt="Church Website">
                   <div class="card-body">
-                    <h5 class="card-title">Luxe Mobile Care</h5>
-                    <p class="card-text">A service website for a mobile auto detailing company called Luxe Mobile Care. The interface is interactive and well designed to match UI/UX standards.</p>
+                    <h5 class="card-title">Sts. Peter & Paul Melkite Catholic Church Website</h5>
+                    <p class="card-text">
+                      Rebuilt the site using React with a Vite setup for speed and modularity - Actively maintaining and updating.
+                    </p>
                   </div>
                 </div>
               </a>
             </div>
 
-            <!-- Design 2 -->
+            <!-- MAIN PROJECT 2: HomeHire -->
             <div class="col-md-6">
-              <a href="https://memorygameseg.github.io/memory-nexus/" class="text-decoration-none">
-                <div class="card h-100 shadow">
-                  <img src="assets/Memory-Nexus-Photo.png" class="card-img-top" alt="Design 2">
-                  <div class="card-body">
-                    <h5 class="card-title">Memory Nexus</h5>
-                    <p class="card-text">An educational web game designed to help users test and improve their memory by matching question-and-answer pairs from six SEG3525 course modules. The interface is interactive and built with React to ensure a smooth and engaging user experience.</p>
-                  </div>
+              <div class="card h-100 shadow">
+                <img src="assets/HomrHire Logo - 600px.png" class="card-img-top" alt="HomeHire">
+                <div class="card-body">
+                  <h5 class="card-title">HomeHire</h5>
+                  <p class="card-text">
+                    Currently bulding a home services marketplace connecting homeowners with verified contractors. 
+                  </p>
                 </div>
-              </a>
+              </div>
             </div>
 
-            <!-- Design 3 -->
-            <div class="col-md-6">
-              <a href="https://chroniqo.github.io/chroniqo/" class="text-decoration-none">
-                <div class="card h-100 shadow">
-                  <img src="assets/Chroniqo-zoom-logo.png" class="card-img-top" alt="Design 3">
-                  <div class="card-body">
-                    <h5 class="card-title">Chroniqo</h5>
-                    <p class="card-text">A modern e-commerce website for luxury watches, allowing users to browse featured, new, and all products. Built with HTML, CSS, and JavaScript, it features a smooth shopping experience with a dynamic cart, dark/light theme toggle, and a guided two-step checkout process. A feedback popup encourages user engagement after purchase.</p>
+            <!-- SCHOOL PROJECTS SECTION -->
+            <div class="col-12">
+              <h5 class="d-flex justify-content-between align-items-center mb-3">
+                School Projects
+                <button class="btn btn-sm btn-outline-secondary"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#schoolProjects">
+                  Show
+                </button>
+              </h5>
+
+              <div class="collapse mt-3" id="schoolProjects">
+                <div class="row g-4">
+
+
+                      <!-- Event Attendance App -->
+                      <div class="col-md-6">
+                        <div class="card h-100 shadow-sm">
+                          <img src="assets/uOttawa_logo.png" class="card-img-top" alt="Event Attendance Management App">
+                          <div class="card-body">
+                            <h6 class="card-title">Event Attendance Management System</h6>
+                            <p class="card-text">
+                              Mobile app built in Android Studio (Java + XML) with Firebase backend. 
+                              Features include role-based access, secure real-time data, intuitive UI, 
+                              and QR attendance scanning. Developed in a 6-person software engineering team.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Luxe Mobile Care -->
+                      <div class="col-md-6">
+                        <a href="https://luxemobilecare.github.io" target="_blank" class="text-decoration-none">
+                          <div class="card h-100 shadow-sm">
+                            <img src="assets/Logo-luxe-mobile-care-black.png" class="card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title">Luxe Mobile Care</h6>
+                              <p class="card-text">A clean and modern website for a mobile auto detailing business.</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <!-- Memory Nexus -->
+                      <div class="col-md-6">
+                        <a href="https://memorygameseg.github.io/memory-nexus/" target="_blank" class="text-decoration-none">
+                          <div class="card h-100 shadow-sm">
+                            <img src="assets/Memory-Nexus-Photo.png" class="card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title">Memory Nexus</h6>
+                              <p class="card-text">A React-based educational memory game built for SEG3525.</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <!-- Chroniqo -->
+                      <div class="col-md-6">
+                        <a href="https://chroniqo.github.io/chroniqo/" target="_blank" class="text-decoration-none">
+                          <div class="card h-100 shadow-sm">
+                            <img src="assets/Chroniqo-zoom-logo.png" class="card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title">Chroniqo</h6>
+                              <p class="card-text">Modern luxury watch e-commerce site with cart + dark mode.</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <!-- Tea Trends -->
+                      <div class="col-md-6">
+                        <a href="https://justinel-chibani.github.io/AnalyticsCo/" target="_blank" class="text-decoration-none">
+                          <div class="card h-100 shadow-sm">
+                            <img src="assets/TeaTrends.png" class="card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title">Tea Trends</h6>
+                              <p class="card-text">Un tableau de bord interactif pour visualiser des statistiques sportives.</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
                   </div>
+
                 </div>
-              </a>
+              </div>
             </div>
 
-            <!-- Design 4 -->
-            <div class="col-md-6">
-              <a href="https://justinel-chibani.github.io/AnalyticsCo/" class="text-decoration-none">
-                <div class="card h-100 shadow">
-                  <img src="assets/TeaTrends.png" class="card-img-top" alt="Design 4">
-                  <div class="card-body">
-                    <h5 class="card-title">Tea Trends</h5>
-                    <p class="card-text">Un tableau de bord interactif pour visualiser des statistiques sportives.</p>
-                  </div>
-                </div>
-              </a>
-            </div>
           </div>
         </div>
       </section>
@@ -385,7 +455,7 @@
     <!--JavaScript-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="scripts.js"></script>
+    <!--  <script src="scripts.js"></script>   -->
     <script>
       function showTechName(name) {
         alert(name);
@@ -414,6 +484,12 @@
         html.setAttribute("data-bs-theme", newTheme);
         updateLogo();
       });
+    </script>
+
+    <script> window.addEventListener("scroll", () => { 
+      const arrow = document.querySelector(".scroll-down"); 
+      const opacity = Math.max(0, 1 - window.scrollY / 200); 
+      arrow.style.opacity = opacity; }); 
     </script>
 
   </body>
