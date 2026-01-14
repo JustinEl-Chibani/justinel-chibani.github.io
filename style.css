@@ -154,13 +154,15 @@ a {
 .icon-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 80px; /* Adjust gap as needed */
+    gap: 20px; /* Adjust gap as needed */
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-
+.tech-title-section {
+    text-align: center;
+}
 .tech-icon {
     width: 48px;
     height: 48px;
