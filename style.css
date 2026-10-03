@@ -115,49 +115,67 @@ a {
 
 
 
-/*Timeline CSS, thanks again Levi*/
-.timeline {
-    position: relative;
-    margin-left: 20px;
-    border-left: 2px solid #6c757d;
-    padding-left: 20px;
+/* -------------------------------------------
+   EXPERIENCE + SKILLS CARDS (same look as the project cards)
+   ------------------------------------------- */
+#experience .card,
+#skills .card {
+    border-radius: 14px;
 }
 
-.timeline-item {
-    position: relative;
-    margin-bottom: 30px;
+#experience .card-body,
+#skills .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
 }
 
-.timeline-marker {
-    width: 12px;
-    height: 12px;
-    background-color: #3bbadb;
-    border-radius: 50%;
-    position: absolute;
-    left: -7px;
-    top: 6px;
+#experience .card-title,
+#skills .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
-.timeline-content {
-    margin-left: 10px;
+#experience .card-title .badge {
+    font-size: 0.7rem;
+    vertical-align: middle;
 }
 
-.timeline-content h5 {
-    margin-bottom: 0.25rem;
+.exp-company {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 0.1rem;
 }
 
-.timeline-content ul {
+#experience .card-body ul {
     padding-left: 1rem;
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* Little tech pills at the bottom of a card */
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: auto;   /* keeps them pinned to the bottom so the cards line up */
+}
+
+.tech-tag {
+    font-size: 0.75rem;
+    padding: 2px 10px;
+    border: 1px solid var(--tertiary);
+    border-radius: 999px;
+    color: var(--bs-body-color);
 }
 
 .icon-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Adjust gap as needed */
+    gap: 14px 6px; /* Adjust gap as needed */
     justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .tech-title-section {
@@ -169,6 +187,13 @@ a {
     transition: transform 0.2s;
 }
 
+/* For the ones with no logo, a Bootstrap icon fills in */
+i.tech-icon {
+    font-size: 2.4rem;
+    line-height: 48px;
+    color: var(--primary);
+}
+
 .tech-icon:hover {
     transform: scale(1.1);
 }
@@ -178,22 +203,13 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 76px;   /* same width for all so they line up in a grid */
 }
 
 .icon-label {
     font-size: 0.75rem;
     margin-top: 0.3rem;
-    color: #ccc;
-    opacity: 0;
-    transition: opacity 0.2s ease;
-}
-
-.icon-wrapper:hover .icon-label {
-    opacity: 1;
-}
-
-[data-bs-theme="light"] .icon-wrapper:hover .icon-label {
-    color: #000000;
+    color: var(--bs-secondary-color);
 }
 
 
@@ -204,7 +220,7 @@ a {
 /* Card width + centering (desktop) */
 #projects .card,
 #schoolProjects .card {
-    max-width: 550px;
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 14px;
@@ -226,19 +242,21 @@ a {
 /* Text spacing */
 #projects .card-body,
 #schoolProjects .card-body {
-    padding: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.9rem;
     text-align: left;
 }
 
 #projects .card-title,
 #schoolProjects .card-title {
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
 #projects .card-text,
 #schoolProjects .card-text {
-    font-size: 0.95rem;
+    font-size: 0.875rem;
     line-height: 1.4;
 }
 
@@ -248,12 +266,6 @@ a {
 
 /* Tablets / small laptops */
 @media (max-width: 768px) {
-
-    /* Cards take full width */
-    #projects .card,
-    #schoolProjects .card {
-        max-width: 100%;
-    }
 
     /* Image remains square but shrinks */
     #projects .card-img-top,
