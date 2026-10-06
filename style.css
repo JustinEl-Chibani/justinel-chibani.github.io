@@ -326,3 +326,49 @@ i.tech-icon {
     color: #d63384;
 }
 
+
+/* Social links in the header: every icon is a 1em box, centered in the row */
+.hero-social {
+  align-items: center;
+}
+
+.hero-social a {
+  display: flex;
+}
+
+.hero-social .bi {
+  line-height: 1;
+}
+
+.hero-social .bi::before {
+  vertical-align: top;
+}
+
+.hero-devpost {
+  display: block;
+  width: 1em;
+  height: 1em;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-devpost:hover {
+  transform: scale(1.1);
+}
+
+[data-bs-theme="dark"] .hero-social .hero-linkedin,
+[data-bs-theme="dark"] .hero-social .hero-github,
+[data-bs-theme="dark"] .hero-social .hero-devpost {
+  color: #ffffff;
+}
+
+[data-bs-theme="light"] .hero-social .hero-linkedin {
+  color: #0a66c2;
+}
+
+[data-bs-theme="light"] .hero-social .hero-github {
+  color: #000000;
+}
+
+[data-bs-theme="light"] .hero-social .hero-devpost {
+  color: #003e54;
+}
